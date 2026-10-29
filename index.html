@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Sitio Web</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image:
+                linear-gradient(rgba(10, 20, 40, 0.75),
+                                rgba(10, 20, 40, 0.75)),
+                url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.55);
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+
+        #header img {
+            width: 85px;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        main {
+            padding: 50px 20px;
+            min-height: 300px;
+        }
+
+        main a {
+            color: #a5d8ff;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.65);
+            border-radius: 12px;
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 600px) {
+            #header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            main {
+                padding: 30px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="header">
+            <img
+                src="https://placehold.co/150x150/FFFFFF/172554?text=WEB"
+                alt="Logotipo de mi sitio web"
+            >
+
+            <div>
+                <h1>Mi espacio web</h1>
+                <p>Bienvenido a mi sitio personal</p>
+            </div>
+        </div>
+
+        <main>
+            <h2>Acerca de este sitio web</h2>
+            <p>
+                Esta página forma parte de la actividad 3.2. Sitio Web sencillo
+            </p>
+
+        </main>
+
+        <footer>
+            <h3>Información académica</h3>
+            <p><strong>Materia:</strong> Conceptualización de servicios en la nube</p>
+            <p><strong>Nombre:</strong> Ana Lilia de León Romo</p>
+            <p><strong>Correo electrónico:</strong> ana.deleon9104@alumnos.udg.mx</p>
+        </footer>
+
+    </div>
+</body>
+</html>
